@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi calculadora</title>
+</head>
+<body>
+
+
+  <script>
+      //alert ( parseInt(valorx) + parseInt(valory))
+    var suma = function (){
+        console.log("intentando sumar")         
+        var valorx = document.getElementById("valor1").value
+        var valory = document.getElementById("valor2").value
+        console.log(valorx)
+        console.log(valory)
+
+        document.getElementById("resultado").innerHTML = "su resultado es: " + (parseInt(valorx) + parseInt(valory))
+ }  
+    var resta = function (){
+        console.log("intentando restar")         
+        var valora = document.getElementById("valor3").value
+        var valorb = document.getElementById("valor4").value
+        console.log(valora)
+        console.log(valorb)
+
+        document.getElementById("resultado").innerHTML = "su resultado es: " + (parseInt(valora) - parseInt(valorb))
+ }
+
+    var multiplicar = function (){
+        console.log("intentando multiplicar")         
+        var valora = document.getElementById("valor5").value
+        var valorb = document.getElementById("valor6").value
+        console.log(valora)
+        console.log(valorb)
+
+        document.getElementById("resultado").innerHTML = "su resultado es: " + (parseInt(valora) * parseInt(valorb))
+ }
+
+
+    var dividir = function (){
+        console.log("intentando dividir")         
+        var valora = document.getElementById("valor7").value
+        var valorb = document.getElementById("valor8").value
+        console.log(valora)
+        console.log(valorb)
+
+        document.getElementById("resultado").innerHTML = "su resultado es: " + (parseInt(valora) / parseInt(valorb))
+
+    }
+
+  </script>
+
+
+    <div id="marco">
+
+        <div= id="Charlie Jaraba">
+            Charlie Jaraba  
+        </div>
+
+        <div id="Estudiante BIT-IBERO">
+            Estudiante BIT-IBERO
+        </div>
+
+        <div id="Curso desarrollo web full stack ">
+            Curso desarrollo web full stack
+        </div>
+
+        <div id="mi boton">suma</div>
+
+        <input type="text" id="valor1" placeholder="ingreso1"> 
+        <input type="text" id="valor2" placeholder="ingreso2">
+        <input type="button" value="calcular" onclick="suma()">
+        <div id="resultado"></div>
+
+        <div id="mi boton">resta</div>
+
+        <input type="text" id="valor3" placeholder="ingreso3"> 
+        <input type="text" id="valor4" placeholder="ingreso4">
+        <input type="button" value="calcular" onclick="resta()">
+        <div id="resultado"></div>
+
+        <div id="mi boton">multiplicar</div>
+
+        <input type="text" id="valor5" placeholder="ingreso5"> 
+        <input type="text" id="valor6" placeholder="ingreso6">
+        <input type="button" value="calcular" onclick="multiplicar()">
+        <div id="resultado"></div>
+
+        <div id="mi boton">dividir</div>
+
+        <input type="text" id="valor7" placeholder="ingreso7"> 
+        <input type="text" id="valor8" placeholder="ingreso8">
+        <input type="button" value="calcular" onclick="dividir()">
+        <div id="resultado"></div>
+
+               
+    </div>
+
+     
+</body>
+</html>
